@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-BlackItalic.eot');
+    src: url('Gantari-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-BlackItalic.woff') format('woff'),
+        url('Gantari-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-Bold.eot');
+    src: url('Gantari-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-Bold.woff') format('woff'),
+        url('Gantari-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-Black.eot');
+    src: url('Gantari-Black.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-Black.woff') format('woff'),
+        url('Gantari-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-Medium.eot');
+    src: url('Gantari-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-Medium.woff') format('woff'),
+        url('Gantari-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-ExtraLightItalic.eot');
+    src: url('Gantari-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-ExtraLightItalic.woff') format('woff'),
+        url('Gantari-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-Regular.eot');
+    src: url('Gantari-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-Regular.woff') format('woff'),
+        url('Gantari-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-BoldItalic.eot');
+    src: url('Gantari-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-BoldItalic.woff') format('woff'),
+        url('Gantari-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-ExtraBoldItalic.eot');
+    src: url('Gantari-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-ExtraBoldItalic.woff') format('woff'),
+        url('Gantari-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-Thin.eot');
+    src: url('Gantari-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-Thin.woff') format('woff'),
+        url('Gantari-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-Italic.eot');
+    src: url('Gantari-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-Italic.woff') format('woff'),
+        url('Gantari-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-ExtraLight.eot');
+    src: url('Gantari-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-ExtraLight.woff') format('woff'),
+        url('Gantari-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-SemiBold.eot');
+    src: url('Gantari-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-SemiBold.woff') format('woff'),
+        url('Gantari-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-ExtraBold.eot');
+    src: url('Gantari-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-ExtraBold.woff') format('woff'),
+        url('Gantari-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-MediumItalic.eot');
+    src: url('Gantari-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-MediumItalic.woff') format('woff'),
+        url('Gantari-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-LightItalic.eot');
+    src: url('Gantari-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-LightItalic.woff') format('woff'),
+        url('Gantari-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-SemiBoldItalic.eot');
+    src: url('Gantari-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-SemiBoldItalic.woff') format('woff'),
+        url('Gantari-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-Light.eot');
+    src: url('Gantari-Light.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-Light.woff') format('woff'),
+        url('Gantari-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('Gantari-ThinItalic.eot');
+    src: url('Gantari-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Gantari-ThinItalic.woff') format('woff'),
+        url('Gantari-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
