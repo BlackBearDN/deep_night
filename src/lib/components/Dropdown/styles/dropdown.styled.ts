@@ -13,7 +13,7 @@ export const DropdownStyled = styled.div<{
   min-width: ${(props): string => `${Math.max(100, props.$width)}px`};
   top: ${(props): string => `${props.$yPosition}px`};
   left: ${(props): string => `${props.$xPosition}px`};
-  background: ${colors.white.d2};
+  background: ${colors.black.d7};
   border-radius: ${borders.r2};
-  border: 1px solid ${colors.white.d1};
+  border: 1px solid ${colors.black.d6};
 `;

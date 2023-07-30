@@ -15,11 +15,11 @@ export default styled.button<{
   background: none;
   border: none;
   border-radius: ${borders.r3};
-  box-shadow: ${(props): string => (props.$shadow ? shadows.sh1 : "none")};
+  box-shadow: ${(props): string => (props.$shadow ? shadows.b2 : "none")};
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  font-family: 'Gantari', sans-serif;
+  font-family: "Gantari", sans-serif;
   display: flex;
   align-items: center;
   justify-content: ${(props): string => (props.$hasIcon ? "left" : "center")};
@@ -31,6 +31,10 @@ export default styled.button<{
       props.$hasChildren
         ? `${indents.i0} ${indents.i0} ${indents.i0} ${indents.i12}`
         : `${indents.i0} ${indents.i8}`};
+
+    path {
+      transition: easy-in-out ${transitions.t3};
+    }
   }
 
   ${(props): string => props.$appearance ?? ""}

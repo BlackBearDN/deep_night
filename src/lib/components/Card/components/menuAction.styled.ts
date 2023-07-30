@@ -15,11 +15,12 @@ export const MenuActionStyled = styled.div`
   &:first-child {
     margin: ${indents.i8} ${indents.i8} ${indents.i0} ${indents.i8};
   }
+
   &:last-child {
     margin: ${indents.i0} ${indents.i8} ${indents.i8} ${indents.i8};
   }
 
   &:hover {
-    background: ${colors.white.d3};
+    background: ${colors.black.d6};
   }
 `;

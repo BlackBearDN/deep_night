@@ -7,5 +7,5 @@ export const TypographyStyled = styled.span<{ as: TTypographyType }>`
   font-family: 'Gantari', sans-serif;
   font-weight: ${(props): string => typographyStylesInfo[props.as as TTypographyType].fontWeight};
   font-size: ${(props): string => typographyStylesInfo[props.as as TTypographyType].fontSize};
-  color: ${colors.black.d9};
+  color: ${colors.white.d2};
 `;

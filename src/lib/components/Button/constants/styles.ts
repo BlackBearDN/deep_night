@@ -1,40 +1,38 @@
 import TAppearance from "../types/TAppearance";
 import colors from "../../../styles/colors";
-import shadows from "../../../styles/shadows";
 import borders from "../../../styles/borders";
-import transitions from "../../../styles/transitions";
 import indents from "../../../styles/indents";
 
 export default {
   appearance: {
     primary: `
-      border: 1px solid ${colors.purple.d1};
-      background-color: ${colors.purple.d1};
+      border: 1px solid ${colors.green.d4};
+      background-color: ${colors.green.d4};
       color: ${colors.white.d1};
       
       svg {
         path {
-          fill: ${colors.white.d1};
+          fill: ${colors.green.d4};
         }
       }
       
       &:hover {
-        background-color: ${colors.purple.d2};
+        background-color: ${colors.green.d5};
       }
     `,
     outlined: `
-      border: 1px solid ${colors.purple.d1};
+      border: 1px solid ${colors.green.d4};
       background-color: ${colors.transparent.t100};
-      color: ${colors.purple.d1};
+      color: ${colors.green.d4};
       
       svg {
         path {
-          fill: ${colors.purple.d1};
+          fill: ${colors.green.d4};
         }
       }
       
       &:hover {
-        background-color: ${colors.purple.d1};
+        background-color: ${colors.green.d4};
         color: ${colors.white.d1};
         
         svg {
@@ -45,38 +43,43 @@ export default {
       }
     `,
     filled: `
-      border: 1px solid ${colors.white.d1};
-      background-color: ${colors.white.d1};
-      color: ${colors.purple.d1};
-      box-shadow: ${shadows.sh1};
+      border: 1px solid ${colors.black.d6};
+      background-color: ${colors.black.d7};
+      color: ${colors.green.d4};
       
       svg {
         path {
-          fill: ${colors.purple.d1};
+          fill: ${colors.green.d4};
         }
       }
       
       &:hover {
-        box-shadow: none;
+        color: ${colors.green.d5};
+        
+        svg {
+          path {
+            fill: ${colors.green.d5};
+          }
+        }
       }
     `,
     icon: `
       border: none;
       background-color: none;
-      color: ${colors.purple.d1};
+      color: ${colors.green.d4};
       
       svg {
         path {
-          fill: ${colors.purple.d1};
+          fill: ${colors.green.d4};
         }
       }
       
       &:hover {
-        color: ${colors.purple.d2};
+        color: ${colors.green.d5};
         
         svg {
           path {
-            fill: ${colors.purple.d2};
+            fill: ${colors.green.d5};
           }
         }
       }
@@ -84,25 +87,23 @@ export default {
     backgroundIcon: `
       min-width: 40px;
       height: 40px;
-      background: ${colors.white.d2};
+      background: ${colors.black.d7};
       border-radius: ${borders.r2};
+      color: ${colors.green.d4};
       display: flex;
       justify-content: space-between;
       align-items: center;
       svg {
         width: 100%;
         padding: ${indents.i0};
-        path {
-          transition: ease-in-out ${transitions.t3};
-        }
       }
       
       &:hover {
-        color: ${colors.purple.d2};
+        color: ${colors.green.d5};
         
         svg {
           path {
-            fill: ${colors.purple.d2};
+            fill: ${colors.green.d5};
           }
         }
       }

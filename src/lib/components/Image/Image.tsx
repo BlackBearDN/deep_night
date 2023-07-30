@@ -1,9 +1,9 @@
 import React from "react";
 import { ImageFullViewContainer, ImageStyled, ModalImage, ModalImageContent } from "./image.styled";
-import EyeOutlinedIcon from "../../assets/icons/components/EyeOutlinedIcon";
 import Typography from "../Typography/Typography";
 import Modal from "../Modal/Modal";
 import UseOutsideClick from "../../hooks/useOutsideClick";
+import { IoEyeOutline } from "react-icons/io5";
 
 const Image: React.FC<
   { hasPreview?: boolean } & React.DetailedHTMLProps<
@@ -26,7 +26,7 @@ const Image: React.FC<
           className="bn-previewContainer"
           onClick={(): void => setShowPreview(true)}
         >
-          <EyeOutlinedIcon />
+          <IoEyeOutline />
           <Typography type="span">Предпросмотр</Typography>
         </ImageFullViewContainer>
       )}

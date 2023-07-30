@@ -8,26 +8,25 @@ import {
 } from "./styles/Card.styled";
 import ICardProps from "./interfaces/ICardProps";
 import Typography from "../Typography/Typography";
-import pictureIcon from "../../assets/icons/files/picture-icon.png";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
 
 const Card: React.FC<ICardProps & React.HTMLAttributes<HTMLDivElement>> = ({
   title,
   bordered,
+  shadow,
+  clicked,
   children,
   image,
   menuActions,
   ...attrs
 }) => {
   return (
-    <CardStyled {...attrs} $bordered={bordered}>
+    <CardStyled {...attrs} $bordered={bordered} $shadow={shadow} $clicked={clicked}>
+      {image && <CardImage $isClear={!image} src={image} />}
       {title && (
         <CardTitle>
           <Typography type="h3">{title}</Typography>
         </CardTitle>
-      )}
-      {image && (
-        <CardImage $isClear={image === "clear"} src={image === "clear" ? pictureIcon : image} />
       )}
       {children && <CardContent>{children}</CardContent>}
       {menuActions && (

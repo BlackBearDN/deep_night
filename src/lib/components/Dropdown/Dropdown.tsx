@@ -53,10 +53,12 @@ const Dropdown: React.FC<
     if (bindingRef) {
       update();
       document.addEventListener("scroll", update, true);
+      window.addEventListener("resize", update, true);
     }
 
     return () => {
       document.removeEventListener("scroll", update, true);
+      window.removeEventListener("resize", update, true);
     };
   }, [bindingRef]);
 
@@ -73,7 +75,7 @@ const Dropdown: React.FC<
     >
       {children}
     </DropdownStyled>,
-    document.body
+    document.body,
   );
 };
 

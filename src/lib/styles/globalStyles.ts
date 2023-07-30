@@ -5,7 +5,7 @@ export default createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: none;
+    background: ${colors.black.d8};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,5 +21,9 @@ export default createGlobalStyle`
       border-radius: 5px;
     }
     scrollbar-track-color: ${colors.white.d4};
+  }
+  
+  svg {
+    font-size: 21px;
   }
 `;

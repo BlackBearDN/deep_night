@@ -1,7 +1,7 @@
 import React from "react";
 import { createPortal } from "react-dom";
 import { ModalCloseButton, ModalContent, ModalStyled } from "./modal.styled";
-import CloseIcon from "../../assets/icons/components/CloseIcon";
+import { IoClose } from "react-icons/io5";
 
 const Modal: React.FC<{
   children: React.ReactNode;
@@ -39,7 +39,7 @@ const Modal: React.FC<{
     <ModalStyled>
       <ModalContent>{children}</ModalContent>
       <ModalCloseButton>
-        <CloseIcon
+        <IoClose
           onClick={(e: React.MouseEvent): void => {
             e.stopPropagation();
             setIsOpen(false);
@@ -47,7 +47,7 @@ const Modal: React.FC<{
         />
       </ModalCloseButton>
     </ModalStyled>,
-    document.body
+    document.body,
   );
 };
 

@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import Button from "../Button/Button";
-import DotsIcon from "../../assets/icons/components/DotsIcon";
 import Dropdown from "../Dropdown/Dropdown";
 import RenderMenuActions from "../Card/components/renderMenuActions";
 import IMenuAction from "../Card/interfaces/IMenuAction";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 const DropdownMenu: React.FC<{ menuActions?: IMenuAction[] | React.ReactNode }> = ({
   menuActions,
@@ -28,7 +28,7 @@ const DropdownMenu: React.FC<{ menuActions?: IMenuAction[] | React.ReactNode }> 
               changeShowMenuActions();
             }}
           >
-            <DotsIcon />
+            <BsThreeDotsVertical />
           </Button>
           <Dropdown
             isOpen={showMenuActions}

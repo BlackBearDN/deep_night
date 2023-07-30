@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ISelectItem from "./types/ISelectItem";
 import {
   SelectDropdownContent,
@@ -8,31 +8,31 @@ import {
 } from "./styles/select.styled";
 import Dropdown from "../Dropdown/Dropdown";
 import Input from "../Input/Input";
-import ArrowIcon from "../../assets/icons/components/ArrowIcon";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Select: React.FC<
   {
     items: ISelectItem[];
-    onChange: (value: any) => void;
-    defaultValue?: any;
+    value?: any;
+    onChange?: (value: any) => void;
     inputProps?: React.HTMLAttributes<HTMLInputElement>;
     closeAfterSelect?: boolean;
   } & React.HTMLAttributes<HTMLDivElement>
-> = ({ items, onChange, defaultValue, inputProps, closeAfterSelect = true, ...attrs }) => {
+> = ({ items, onChange, value, inputProps, closeAfterSelect = true, ...attrs }) => {
   const selectRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [value, setValue] = useState<ISelectItem | null>(defaultValue);
+  const [componentValue, setComponentValue] = useState<ISelectItem | null>(value);
   const [inputValue, setInputValue] = useState<string | null>(null);
   const [viewedItems, setViewedItems] = useState(items);
 
   const changeValue = (equalsItem: ISelectItem | null): void => {
-    if (equalsItem?.label === value?.label) {
+    if (equalsItem?.label === componentValue?.label || !onChange) {
       return;
     }
 
     setInputValue(equalsItem?.label || null);
-    setValue(equalsItem);
+    setComponentValue(equalsItem);
     onChange(equalsItem?.value);
 
     if (closeAfterSelect) {
@@ -41,24 +41,40 @@ const Select: React.FC<
   };
 
   const changeInputValue = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    if (!onChange) {
+      return;
+    }
+
     setInputValue(e.target.value);
     setViewedItems(items.filter((item) => item.label.includes(e.target.value)));
 
     const equalsItem = items.find((item) => item.label === e.target.value);
     if (!equalsItem) {
-      setValue(null);
+      setComponentValue(null);
       onChange(null);
       return;
     }
     changeValue(equalsItem);
   };
 
+  /**
+   * EFFECTS
+   */
+  useEffect(() => {
+    const itemByValue = items.find((item) => item.value === value);
+    if (!itemByValue) {
+      return;
+    }
+
+    changeValue(itemByValue);
+  }, [value]);
+
   return (
     <SelectStyled {...attrs} ref={selectRef}>
       <Input
         {...inputProps}
         type="text"
-        icon={<ArrowIcon />}
+        icon={<IoIosArrowForward />}
         iconProps={{
           className: isOpen ? "openSelectInputIcon" : "selectInputIcon",
         }}

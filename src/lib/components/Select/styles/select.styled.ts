@@ -27,11 +27,11 @@ export const SelectDropdownItem = styled.div`
   font-family: 'Gantari', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: ${colors.white.d9};
+  color: ${colors.white.d2};
   cursor: pointer;
   transition: background-color ease-in-out 0.3s;
   &:hover {
-    background-color: ${colors.white.d3};
+    background-color: ${colors.black.d6};
   }
 `;
 

@@ -10,10 +10,10 @@ export const InputStyled = styled.div`
 
 export const InputField = styled.input<{ $hasIcon: boolean }>`
   outline: none;
-  background: ${colors.white.d2};
+  background: ${colors.black.d7};
   border: none;
   border-radius: ${borders.r2};
-  color: ${colors.white.d8};
+  color: ${colors.white.d2};
   padding: ${indents.i12} ${(props): string => (props.$hasIcon ? indents.i32 : indents.i16)}
     ${indents.i12} ${indents.i16};
   font-family: 'Gantari', sans-serif;
@@ -36,7 +36,7 @@ export const InputIcon = styled.div<{ $iconColor?: string }>`
   pointer-events: none;
   svg {
     path {
-      fill: ${(props): string => props.$iconColor || colors.purple.d1} !important;
+      fill: ${(props): string => props.$iconColor || colors.green.d4} !important;
     }
   }
 `;
